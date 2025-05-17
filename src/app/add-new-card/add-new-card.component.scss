@@ -1,0 +1,79 @@
+.add-new-card-comp {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #F5F5F5 1px solid;
+    padding-bottom: 12px;
+}
+
+.header-title {
+    color: #325BAF;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cross-icon {
+    height: 24px;
+    width: 24px;
+    border-radius: 8px;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 18px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-input {
+    margin-bottom: 18px;
+}
+
+.form-field {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add-card-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.btn-enable {
+    cursor: pointer;
+    background: #325BAF;
+    color: #FFFFFF;
+}
+
+.btn-disable {
+    color: #222222;
+    background: #F5F9FF;
+}
+
+.error-msg {
+    font-size: 12px;
+}

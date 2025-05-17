@@ -1,0 +1,27 @@
+<div class="card-transaction-comp">
+    <div class="header-content">
+        <div class="icon-text-section">
+            <img class="details-icon" src="assets/Transactions.svg">
+    
+            <div class="text">Recent transactions</div>
+        </div>
+    
+        <div class="open-close-arrow" (click)="toggleContent()" *ngIf="cards[cardIndex]">
+            <img class="open-close-icon" [src]="isExpanded ? 'assets/Up_Arrow.svg' : 'assets/Down_Arrow.svg'">
+        </div>
+    </div>
+
+    <div class="expanded-section" *ngIf="isExpanded">
+        <div class="transaction-list">
+            <div *ngFor="let transaction of transactionList; let i = index">
+                <app-transaction-item [transactionItem]="transaction" [isLastItem]="i === (transactionList.length - 1)"></app-transaction-item>
+            </div>
+        </div>
+
+        <div class="view-all-message" *ngIf="cards[cardIndex]?.transactions && cards[cardIndex].transactions.length > 4">
+            <div class="message-text">
+                View all card transactions
+            </div>
+        </div>
+    </div>
+</div>

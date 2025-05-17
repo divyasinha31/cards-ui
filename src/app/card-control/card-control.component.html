@@ -1,0 +1,7 @@
+<div class="card-control-comp">
+    <div class="control-item" *ngFor="let item of cardControls; let i = index">
+        <img class="control-icon" [src]="item.icon" (click)="clickHandler(i)">
+        <div class="control-label">{{item.textLine1}}</div>
+        <div class="control-label">{{item.textLine2}}</div>
+    </div>
+</div>

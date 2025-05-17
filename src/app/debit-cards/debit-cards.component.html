@@ -1,0 +1,12 @@
+<div class="debit-cards-comp">
+    <div class="left-section">
+        <app-cards-list [cards]="cards" [cardIndex]="selectedCardIndex" (selectedCardIndex)="updateSelectedCardIndex($event)"
+            (freezeUnfreezeCard)="updateCardFreezeUnfreezeStatus($event)">
+        </app-cards-list>
+    </div>
+
+    <div class="right-section">
+        <app-card-details></app-card-details>
+        <app-card-transaction [cards]="cards" [cardIndex]="selectedCardIndex"></app-card-transaction>
+    </div>
+</div>

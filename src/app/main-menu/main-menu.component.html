@@ -1,0 +1,6 @@
+<div class="main-menu-comp">
+    <div class="menu-item" *ngFor="let item of menuItems; let i=index">
+        <img class="menu-item-icon" [src]="item.icon">
+        <div class="menu-item-text" [ngClass]="selectedMenuItem === i ? 'menu-active-text' : 'menu-inactive-text'">{{item.text}}</div>
+    </div>
+</div>

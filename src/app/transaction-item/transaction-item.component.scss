@@ -1,0 +1,115 @@
+.transaction-item-comp {
+    background: #FFFFFF;
+}
+
+.transaction-item-section {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section {
+    display: flex;
+}
+
+.merchant-type-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin-right: 12px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.merchant-icon {
+    width: 16px;
+}
+
+.merchant-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.merchant-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #222222;
+    margin-bottom: 4px;
+}
+
+.transaction-date {
+    color: #AAAAAA;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.card-icon {
+    margin-right: 8px;
+    width: 24px;
+    height: 20px;
+    border-radius: 10px;
+    background: #325BAF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transaction-message-section {
+    display: flex;
+    align-items: center;
+}
+
+.transaction-message {
+    color: #325BAF;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.amount-section {
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+}
+
+.space {
+    margin-right: 5px;
+}
+
+.credit {
+    color: #01D167;
+}
+
+.debit {
+    color: #222222;
+}
+
+.next-icon {
+    margin-left: 10px;
+}
+
+.store-bg {
+    background: #009DFF1A;
+}
+
+.travel.bg {
+    background: #00D6B51A;
+}
+
+.entertainment-bg {
+    background: #F251951A;
+}
+
+.bottom-border-section {
+    padding: 0 24px;
+}
+
+.bottom-border {
+    border-bottom: #F5F5F5 1px solid;
+}
+
+.last-item {
+    border-radius: 8px;
+}

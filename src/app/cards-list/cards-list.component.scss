@@ -1,0 +1,90 @@
+.cards-list-comp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-number-control {
+    display: flex;
+    justify-content: end;
+    width: 414px;
+    margin: 30px 0 12px;
+}
+
+.show-card-number-button {
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #01D167;
+    display: flex;
+    background: #FFFFFF;
+    align-items: center;
+    cursor: pointer;
+}
+
+.show-card-number-icon {
+    width: 16px;
+    margin-right: 6px;
+}
+
+.card-info {
+    transition: transform 0.4s ease;
+}
+
+.selected-card-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 32px;
+}
+
+.selected-card-icon {
+    display: flex;
+}
+
+.selected-card {
+    width: 16px;
+    height: 8px;
+    border-radius: 8px;
+    background: #01D167;
+    cursor: pointer;
+}
+
+.unselected-card {
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background: #01D167;
+    opacity: 20%;
+    cursor: pointer;
+}
+
+.right-gap {
+    margin-right: 8px;
+}
+
+.slide-left {
+    animation: slideLeft 0.4s forwards;
+}
+
+.slide-right {
+    animation: slideRight 0.4s forwards;
+}
+
+@keyframes slideLeft {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

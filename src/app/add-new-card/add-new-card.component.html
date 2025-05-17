@@ -1,0 +1,43 @@
+<div class="add-new-card-comp">
+    <div class="header">
+        <div class="header-title">Add new card</div>
+
+        <div class="cross-icon" (click)="closeModal()">X</div>
+    </div>
+
+    <div class="content">
+        <div class="form" [formGroup]="newCardForm">
+            <div class="name-input">
+                <mat-form-field appearance="outline" class="form-field">
+                    <mat-label>Name on the card</mat-label>
+                    <input matInput formControlName="userName" placeholder="Eg. John Wick" />
+
+                    <mat-error class="error-msg" *ngIf="newCardForm.get('userName')?.hasError('required') && newCardForm.get('userName')?.touched">
+                        Name on the card cannot be empty.
+                    </mat-error>
+                </mat-form-field>
+            </div>
+
+            <div class="brand-input">
+                <mat-form-field appearance="outline" class="form-field">
+                    <mat-label>Card Brand</mat-label>
+                    <mat-select formControlName="cardBrand">
+                      <mat-option *ngFor="let brand of data.cardBrands" [value]="brand.value">
+                        {{ brand.brandName }}
+                      </mat-option>
+                    </mat-select>
+
+                    <mat-error *ngIf="newCardForm.get('cardBrand')?.hasError('required') && newCardForm.get('cardBrand')?.touched">
+                        Please choose the card brand for your new card.
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <button class="add-card-button" (click)="addCard()" [disabled]="newCardForm.invalid" [ngClass]="newCardForm.invalid ? 'btn-disabled' : 'btn-enable'">
+            Add Card
+        </button>
+    </div>
+</div>

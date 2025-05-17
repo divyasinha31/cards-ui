@@ -1,0 +1,24 @@
+.menu-item {
+    display: flex;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.menu-item-icon {
+    width: 24px;
+    margin-right: 16px;
+}
+
+.menu-item-text {
+    font-size: 16px;
+}
+
+.menu-active-text {
+    color: #01D167;
+    font-weight: bold;
+}
+
+.menu-inactive-text {
+    color: #FFFFFF;
+    font-weight: normal;;
+}

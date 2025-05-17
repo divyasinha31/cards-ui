@@ -1,0 +1,39 @@
+<div class="transaction-item-comp" [ngClass]="isLastItem ? 'last-item' : ''">
+    <div class="transaction-item-section">
+        <div class="left-section">
+            <div class="merchant-type-icon" [ngClass]="{'store-bg': transactionItem.recipientType === recipientType.Store,
+                'travel.bg': transactionItem.recipientType === recipientType.Travel,
+                'entertainment-bg': transactionItem.recipientType === recipientType.Entertainment}">
+                <img class="merchant-icon" [src]="iconSrc">
+            </div>
+
+            <div class="merchant-details">
+                <div class="merchant-name">{{transactionItem.paidTo}}</div>
+                <div class="transaction-date">{{transactionItem.transactionDate | date:'d MMMM y'}}</div>
+                <div class="transaction-message-section">
+                    <div class="card-icon">
+                        <img class="icon" src="assets/Card_Icon.svg">
+                    </div>
+                    <div class="transaction-message">
+                        {{transactionMessage}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="amount-section" [ngClass]="(transactionItem.transactionType === transactionType.Credit) ? 'credit' : 'debit'">
+                <div class="transaction-type space">{{transactionItem.transactionType === transactionType.Credit ? '+' : '-'}}</div>
+                <div class="currency symbol space">S$</div>
+                <div class="transation-amount">{{transactionItem.amount}}</div>
+                <div class="next-icon">
+                    <img src="assets/Next_Icon.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="!isLastItem" class="bottom-border-section">
+        <div class="bottom-border"></div>
+    </div>
+</div>

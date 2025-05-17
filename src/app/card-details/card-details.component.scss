@@ -1,0 +1,26 @@
+.card-details-comp {
+    background: #F5F9FF;
+    border: #F5F5F5 1px solid;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    width: 434px;
+}
+
+.icon-text-section {
+    display: flex;
+    align-items: center;
+}
+
+.details-icon {
+    margin-right: 12px;
+}
+
+.text {
+    font-size: 14px;
+    color: #0C365A;
+    font-weight: normal;
+}

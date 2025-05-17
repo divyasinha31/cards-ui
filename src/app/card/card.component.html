@@ -1,0 +1,69 @@
+<div class="card-comp" [ngClass]="card.freeze ? 'frozen-card' : ''">
+    <div class="aspire-logo">
+        <img class="card-logo" src="assets/Aspire_Logo_White.svg">
+    </div>
+
+    <div class="card-owner">
+        {{card.cardName}}
+    </div>
+
+    <div class="card-number">
+        <div class="masked-number" *ngIf="isCurrentCardNumberHidden">
+            <div class="number-set right-gap">
+                <div class="hidden-number number-gap"></div>
+                <div class="hidden-number number-gap"></div>
+                <div class="hidden-number number-gap"></div>
+                <div class="hidden-number"></div>
+            </div>
+
+            <div class="number-set right-gap">
+                <div class="hidden-number number-gap"></div>
+                <div class="hidden-number number-gap"></div>
+                <div class="hidden-number number-gap"></div>
+                <div class="hidden-number"></div>
+            </div>
+
+            <div class="number-set right-gap">
+                <div class="hidden-number number-gap"></div>
+                <div class="hidden-number number-gap"></div>
+                <div class="hidden-number number-gap"></div>
+                <div class="hidden-number"></div>
+            </div>
+
+            <div>{{card.cardNo.toString().substring(12)}}</div>
+        </div>
+
+        <div class="unmasked-number" *ngIf="!isCurrentCardNumberHidden">
+            <div class="right-gap">{{card.cardNo.toString().substring(0, 4)}}</div>
+            <div class="right-gap">{{card.cardNo.toString().substring(4, 8)}}</div>
+            <div class="right-gap">{{card.cardNo.toString().substring(8, 12)}}</div>
+            <div class="right-gap">{{card.cardNo.toString().substring(12)}}</div>
+        </div>
+    </div>
+
+    <div class="card-additional-info">
+        <div class="card-validity">
+            <div class="card-info-label">
+                Thru:
+            </div>
+
+            <div class="card-info-text">
+                {{card.validity.month < 10 ? '0'.concat(card.validity.month.toString()) : card.validity.month}}/{{card.validity.year.toString().substring(2)}}
+            </div>
+        </div>
+
+        <div class="card-cvv">
+            <div class="card-info-label">
+                CVV:
+            </div>
+
+            <div [ngClass]="isCurrentCardNumberHidden ? 'card-cvv-text' : 'card-info-text'">
+                {{isCurrentCardNumberHidden ? '***' : card.cvv}}
+            </div>
+        </div>
+    </div>
+
+    <div class="card-brand">
+        <img class="card-company" [src]="cardBrandNameIcon">
+    </div>
+</div>

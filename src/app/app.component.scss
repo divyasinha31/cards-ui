@@ -1,0 +1,137 @@
+.home {
+    display: flex;
+    height: 100%;
+}
+
+.menu {
+    background: #0C365A;
+    width: 340px;
+    padding: 48px 48px 0;
+}
+
+.menu-active-text {
+    color: #01D167;
+    font-weight: bold;
+}
+
+.menu-inactive-text {
+    color: #FFFFFF;
+    font-weight: normal;;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+}
+
+.aspire-menu-icon {
+    width: 125px;
+}
+
+.menu-text {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: left;
+    margin-top: 19px;
+    margin-bottom: 81px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 340px);
+    padding: 60px 60px;
+    overflow-y: auto;
+}
+
+.balance-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.balance-card-add-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+
+.text-icon-section {
+    display: flex;
+}
+
+.balance-info {
+    display: flex;
+    align-items: center;
+}
+
+.balance-text {
+    font-size: 14px;
+    font-weight: normal;
+    color: #222222;
+    margin-bottom: 9px;
+}
+
+.currency-icon {
+    height: 24px;
+    width: 40px;
+    background: #01D167;
+    color: #FFFFFF;
+    border-radius: 4px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.balance-amount {
+    font-size: 26px;
+    color: #222222;
+    font-weight: bold;
+}
+
+.new-card-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 4px;
+    background: #325BAF;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+.plus-icon {
+    margin-right: 8px;
+}
+
+.new-card-btn-text {
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.content-list {
+    display: flex;
+    margin-bottom: 21px;
+}
+
+.content-item {
+    border: none;
+    background: #FFFFFF;
+    font-size: 14px;
+    color: #222222;
+    padding: 0 0 5px !important;
+    margin-right: 32px;
+}
+
+.content-item-active {
+    border-bottom: #23CEFD 2px solid;
+    font-weight: bolder;
+}
+
+.content-item-inactive {
+    border-bottom: #FFFFFF 2px solid;
+    font-weight: lighter;
+}

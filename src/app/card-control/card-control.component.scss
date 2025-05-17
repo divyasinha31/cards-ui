@@ -1,0 +1,26 @@
+.card-control-comp {
+    display: flex;
+    background: #EDF3FF;
+    border-radius: 16px;
+    width: 360px;
+    padding: 20px 27px 21px;
+    justify-content: space-between;
+}
+
+.control-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.control-icon {
+    width: 32px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.control-label {
+    color: #0C365A;
+    font-size: 13px;
+    font-weight: normal;
+}

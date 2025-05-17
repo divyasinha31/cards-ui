@@ -1,0 +1,32 @@
+<div class="cards-list-comp">
+    <div class="card-number-control">
+        <button class="show-card-number-button" (click)="changeShowCardNumber()">
+            <img class="show-card-number-icon"
+                [src]="isCurrentCardNumberHidden ? 'assets/Show_Card_Number.svg': 'assets/Hide_Card_Number.svg'">
+
+            <div class="show-card-number-text">
+                {{isCurrentCardNumberHidden ? 'Show card number' : 'Hide card number'}}
+            </div>
+        </button>
+    </div>
+
+    <div class="cards">
+        <div class="cards-list">
+            <div class="card-info" [ngClass]="animationDirection" (@animation.done)="resetAnimation()">
+                <app-card [isCurrentCardNumberHidden]="isCurrentCardNumberHidden" [card]="cards[cardIndex]"></app-card>
+            </div>
+
+            <div class="selected-card-section">
+                <div class="selected-card-icon">
+                    <div *ngFor="let card of cards; let i = index" [ngClass]="[cardIndex === i ? 'selected-card' : 'unselected-card',
+                        (i !== cards.length - 1) ? 'right-gap' : '']" (click)="updateSelectedCardIndex(i)"></div>
+                </div>
+            </div>
+
+            <div class="card-controls">
+                <app-card-control [card]="cards[cardIndex]" [isCardFrozen]="cards[cardIndex].freeze" (freezeUnfreezeCard)="updateCardFreezeUnfreezeStatus($event)">
+                </app-card-control>
+            </div>
+        </div>
+    </div>
+</div>

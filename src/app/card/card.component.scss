@@ -1,0 +1,87 @@
+.card-comp {
+    background: #01D167;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 360px;
+    padding: 27px;
+}
+
+.frozen-card {
+    opacity: 75%;
+}
+
+.aspire-logo {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 27px;
+}
+
+.card-logo {
+    width: 84px;
+}
+
+.card-owner {
+    font-size: 24px;
+    display: flex;
+    padding-bottom: 27px;
+}
+
+.card-number {
+    font-size: 14px;
+    padding-bottom: 22px;
+}
+
+.masked-number, .unmasked-number {
+    display: flex;
+    align-items: center;
+}
+
+.hidden-number {
+    height: 9px;
+    width: 9px;
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+
+.card-info-label, .card-info-text {
+    font-size: 13px;
+}
+
+.card-additional-info {
+    padding-bottom: 5px;
+}
+
+.card-info-label {
+    margin-right: 4px;
+}
+
+.card-company {
+    width: 67px;
+}
+
+.right-gap {
+    margin-right: 27px;
+}
+
+.number-gap {
+    margin-right: 7px;
+}
+
+.card-additional-info, .card-validity, .card-cvv, .number-set {
+    display: flex;
+}
+
+.card-validity {
+    margin-right: 36px;
+}
+
+.card-cvv-text {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.card-brand {
+    display: flex;
+    justify-content: end;
+}
