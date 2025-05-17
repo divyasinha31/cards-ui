@@ -49,4 +49,8 @@ The unit tests can be conducted either in one go or one component at a time. Her
 1. Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 2. To run tests for only one specific spec file in Angular, use the ng test command with the `--include flag`. For example, if your file is at src/app/app.component.spec.ts, run: `ng test --include src/app/app.component.spec.ts`.
 
+---
 
+### Application hosted using [Netlify](https://www.netlify.com/)
+
+As part of the challenge, the application developed is hosted using Netlify. [Navigate](https://superlative-biscuit-d7b862.netlify.app/) there to interact with the page. 
