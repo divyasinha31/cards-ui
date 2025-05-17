@@ -2,6 +2,10 @@
 
 > A coding challenge to focus on [UI provided](https://xd.adobe.com/view/80c753f2-db2f-4dfc-b6c2-ce39a4c787f0-d594/screen/7d8639be-16a2-4dc6-9ddc-c3bcd8d8f1ee/) and have small interactions with the page where the user can add more cards, and also has an option to freeze or unfreeze an existing card.
 
+---
+
+### Assumptions
+
 To develop the UI and perform interactions, certain assumptions have been made, which are as follows:
 - A user will log into the portal and will interact with this.
 - This user has an account balance, name, along with other aspects of a physical user.
@@ -17,23 +21,32 @@ To develop the UI and perform interactions, certain assumptions have been made, 
     - Form validations `Validators.required` are applied to both fields.
     - The "Add Card" button is disabled if the `newCardForm` is invalid.
 - When adding a new card, the year validity is calculated between the next 2 to 5 years from the current year.
-    - For example, if the user tries to add a card in the year 2025, the card validity will be generated between 2027 and 2030.
+    - For example, if the user tries to add a card in the year 2025, the card's validity will be generated between 2027 and 2030.
+
+---
 
 ### Cloning the application
-To clone the repository, follow these steps:
 
+To clone the repository, follow these steps:
 1. Install [Git](https://git-scm.com/downloads) (if not already installed).
 2. Copy the **HTTPS URL**, https://github.com/divyasinha31/cards-ui.git.
 3. Open a terminal, navigate to the desired location, and run: `git clone https://github.com/divyasinha31/cards-ui.git`
 
+---
+
 ### Running the application locally
 
+To run the application locally, follow these steps:
 1. Once cloned, run `npm install` to install the relevant Node packages.
 2. Next, run `ng serve` for a dev server and navigate to [http://localhost:4200/](http://localhost:4200/).
 3. The application will automatically reload if you change any of the source files.
 
+---
+
 ### Running unit tests
 
+The unit tests can be conducted either in one go or one component at a time. Here is how to do both.
 1. Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
 2. To run tests for only one specific spec file in Angular, use the ng test command with the `--include flag`. For example, if your file is at src/app/app.component.spec.ts, run: `ng test --include src/app/app.component.spec.ts`.
+
+
